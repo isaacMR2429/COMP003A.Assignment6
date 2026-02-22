@@ -20,6 +20,7 @@
                 switch (choices)
                 {
                     case "1":
+                        Console.WriteLine();
                         session1.DisplayInfo();
                         session2.DisplayInfo();
                         session3.DisplayInfo();
