@@ -15,7 +15,39 @@
                 Console.WriteLine("2. Update One Session");
                 Console.WriteLine("3. Exit");
                 Console.Write("Enter Choice: ");
+                string choices = Console.ReadLine();
 
+                switch (choices)
+                {
+                    case "1":
+                        session1.DisplayInfo();
+                        session2.DisplayInfo();
+                        session3.DisplayInfo();
+                        break;
+                    case "2":
+                        Console.Write("Please Select session to update (1-3): ");
+                        string updatedChoice = Console.ReadLine();
+                        switch (updatedChoice)
+                        {
+                            case "1":
+                                session1.IfCompleted();
+                                Console.WriteLine("Updated session 1.");
+                                break;
+                            case "2":
+                                session2.IfCompleted();
+                                Console.WriteLine("Updated session 2.");
+                                break;
+                            case "3":
+                                session3.IfCompleted();
+                                Console.WriteLine("Updated session 3.");
+                                break;
+                        }
+                        break;
+                    case "3":
+                        working = false;
+                        Console.WriteLine("Program Ended");
+                        break;
+                }
             }
         }
     }
