@@ -18,6 +18,13 @@ namespace COMP003A.Assignment6
             Time = time;
             Completed = completed;
         }
-        
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Workout: {Name}, Time: {Time}, Completed: {Completed}");
+        }
+        public void IfCompleted()
+        {
+            Completed = !Completed;
+        }
     }
 }
