@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace COMP003A.Assignment6
-{
-    public class WorkoutSession
+{ 
+    public class WorkoutSession // This class describes a workout session with the basic details and actions.
     {
         public string Name;
         public int Time;
@@ -18,11 +18,11 @@ namespace COMP003A.Assignment6
             Time = time;
             Completed = completed;
         }
-        public void DisplayInfo()
+        public void DisplayInfo() // This method just displays the current workout information.
         {
             Console.WriteLine($"Workout: {Name}, Time: {Time}, Completed: {Completed}");
         }
-        public void IfCompleted()
+        public void IfCompleted() // This method flips whether the workout is complete.
         {
             Completed = !Completed;
         }
