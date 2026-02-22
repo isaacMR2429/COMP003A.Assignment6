@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //This program manages workout sessions using the WorkoutSession.cs class and menu loop
         {
             WorkoutSession session1 = new WorkoutSession("Cardio Session", 30, false);
             WorkoutSession session2 = new WorkoutSession("Weight Lifting", 60, true);
@@ -11,7 +11,7 @@
             bool working = true;
             while (working)
             {
-                Console.WriteLine("1. Display All Sessions");
+                Console.WriteLine("\n1. Display All Sessions");
                 Console.WriteLine("2. Update One Session");
                 Console.WriteLine("3. Exit");
                 Console.Write("Enter Choice: ");
@@ -26,7 +26,7 @@
                         session3.DisplayInfo();
                         break;
                     case "2":
-                        Console.Write("Please Select session to update (1-3): ");
+                        Console.Write("\nPlease Select session to update (1-3): ");
                         string updatedChoice = Console.ReadLine();
                         switch (updatedChoice)
                         {
@@ -46,7 +46,7 @@
                         break;
                     case "3":
                         working = false;
-                        Console.WriteLine("Program Ended");
+                        Console.WriteLine("\nProgram Ended");
                         break;
                 }
             }
