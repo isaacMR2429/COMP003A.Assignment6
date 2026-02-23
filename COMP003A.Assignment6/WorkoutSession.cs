@@ -20,7 +20,7 @@ namespace COMP003A.Assignment6
         }
         public void DisplayInfo() // This method just displays the current workout information.
         {
-            Console.WriteLine($"Workout: {Name}, Time: {Time}, Completed: {Completed}");
+            Console.WriteLine($"Workout: {Name}, Time: {Time} minutes, Completed: {Completed}");
         }
         public void IfCompleted() // This method flips whether the workout is complete.
         {
